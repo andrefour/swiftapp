@@ -4,27 +4,28 @@
 //
 //  Created by Andre Theuma on 12/24/17.
 //  Copyright © 2017 Andre Theuma. All rights reserved.
-//
+// hello
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    var tapcount = 0
+ 
     @IBOutlet weak var TheLabel: UILabel!
-    @IBOutlet weak var TheLabel2: UILabel!
+    
     
     
     @IBAction func PUSHBUTTON(_ sender: UIButton) {
-        TheLabel.text = "Hello there"
-        print("Button tapped") //outputs button tapped so as to know that the button is working.
-        tapcount = tapcount + 1
-      
+        
+        TheLabel.text = " The Answer is: \((Double(text1.text!)! + (Double(text2.text!)!)))"
     }
+    
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func PUSHBUTTON2(_ sender: UIButton) {
        
-        TheLabel2.text = "tapcount"
         
     }
     
